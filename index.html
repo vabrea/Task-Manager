@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Oswald:wght@200;300;500&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <main>
+      <section id="sect-form">
+        <div class="form-container">
+          <h3>Task Information</h3>
+
+          <div class="control">
+            <label>Importance</label>
+            <i id="iImportant" class="fas fa-star icon-important"></i>
+          </div>
+          <div class="control">
+            <label>Title</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="control">
+            <label>Description</label>
+            <textarea type="textarea" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="control">
+            <label>Category</label>
+            <select class="form-control">
+              <option value="Home" selected="true">Home</option>
+              <option value="Work">Work</option>
+              <option value="Personal">School</option>
+            </select>
+          </div>
+          <div class="control">
+            <label>Start Date</label>
+            <input type="datetime-local" class="form-control" />
+          </div>
+          <div class="control">
+            <label>Due Date</label>
+            <input type="datetime-local" class="form-control" />
+          </div>
+          <div class="control">
+            <label>Color</label>
+            <input type="color" class="form-control" />
+          </div>
+          <div class="btn-container">
+            <button class="btn" onclick="">Create New Task</button>
+          </div>
+        </div>
+      </section>
+      <section id="sect-list">
+        <button id="btnToggle">Show/Hide Form</button>
+      </section>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="task.js"></script>
+</html>
