@@ -11,7 +11,7 @@ html {
 main {
   display: flex;
   height: 100vh;
-  background-image: url("images/formimg.jpeg");
+  background-image: url("formimg.jpeg");
   background-size: 100%;
 }
 
