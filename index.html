@@ -17,6 +17,10 @@
     />
     <title>Task Manager</title>
   </head>
+  <nav class="nav-bar">
+    <h4>Task Manager</h4>
+    <button id="btnToggle">Show/Hide Form</button>
+  </nav>
   <body>
     <main>
       <section id="sect-form">
@@ -29,42 +33,53 @@
           </div>
           <div class="control">
             <label>Title</label>
-            <input type="text" class="form-control" />
+            <input id="txtTitle" type="text" class="form-control" />
           </div>
           <div class="control">
             <label>Description</label>
-            <textarea type="textarea" class="form-control" rows="3"></textarea>
+            <textarea
+              id="txtDescription"
+              type="textarea"
+              class="form-control"
+              rows="3"
+              maxlength="75"
+            ></textarea>
           </div>
           <div class="control">
             <label>Category</label>
-            <select class="form-control">
+            <select id="selCategory" class="form-control">
               <option value="Home" selected="true">Home</option>
               <option value="Work">Work</option>
-              <option value="Personal">School</option>
+              <option value="School">School</option>
             </select>
           </div>
           <div class="control">
             <label>Start Date</label>
-            <input type="datetime-local" class="form-control" />
+            <input
+              id="selStartDate"
+              type="datetime-local"
+              class="form-control"
+            />
           </div>
           <div class="control">
             <label>Due Date</label>
-            <input type="datetime-local" class="form-control" />
+            <input id="selDueDate" type="datetime-local" class="form-control" />
           </div>
           <div class="control">
             <label>Color</label>
-            <input type="color" class="form-control" />
+            <input id="selColor" type="color" class="form-control" />
           </div>
           <div class="btn-container">
-            <button class="btn" onclick="">Create New Task</button>
+            <button id="btnSave" class="btn">Create New Task</button>
           </div>
         </div>
       </section>
       <section id="sect-list">
-        <button id="btnToggle">Show/Hide Form</button>
+        <div id="task-container"></div>
       </section>
     </main>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="task.js"></script>
+  <script src="scripts/task.js"></script>
+  <script src="scripts/taskmanager.js"></script>
 </html>
