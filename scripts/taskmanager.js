@@ -7,5 +7,7 @@ class Task{
     this.startDate=startDate;
     this.dueDate=dueDate;
     this.color=color;
+
+    this.owner = "Von";
     }
 }
